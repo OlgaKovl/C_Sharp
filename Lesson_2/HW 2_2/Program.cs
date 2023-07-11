@@ -3,7 +3,7 @@
     Console.WriteLine(num);
     int fnum = num / 100;
     int tnum = num % 10;
-    return (fnum * 10 + tnum);  
+    return (fnum *10 + tnum);  
 }
 
 int ft_num = new Random().Next(100, 1000);
