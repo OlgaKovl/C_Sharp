@@ -17,12 +17,12 @@ int [] FillArray(int size, int from, int to)
     return arr;
 }
 
-int GetEvenCountArray(int[] arr){
+int GetSumOddIndexArray(int[] arr){
     int count = 0;
     for (int i = 0; i < arr.Length; i++)
     {
-        if(arr[i] %2 ==0){
-            count++;
+        if(i %2 != 0){
+            count+=arr[i];
         }
     }
     return count;
@@ -34,5 +34,5 @@ int stop = int.Parse(Console.ReadLine()!);
 
 int[] mass = FillArray(num, start, stop);
 Print(mass);
-int countResult = GetEvenCountArray(mass);
+int countResult = GetSumOddIndexArray(mass);
 Console.WriteLine(countResult);
